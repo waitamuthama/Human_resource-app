@@ -1,0 +1,46 @@
+.navbar {
+  background-color:#00001a;
+  color: white;
+}
+.navbar a{
+  color:white;
+}
+#side-menu{
+ background-color:white;
+ color:black;
+ margin-bottom: px;
+}
+
+
+.mini-panel{
+  height:400px;
+
+}
+.employees-panel{
+  height:450px;
+  overflow: scroll;
+}
+.img{
+  border-top:5px;
+  margin-left: 80px;
+  margin-right: 50px;
+  //text-align: center;
+
+}
+.form-group input {
+  outline: 0;
+   border-width: 0 0 2px;
+   border-color: dark;
+}
+.form-group input:focus {
+ border-color: green
+
+}
+.input-group-addon{
+  background-color: white;
+  border:none;
+}
+.page-header{
+  text-align: center;
+  font-size: 36px;
+}

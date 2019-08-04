@@ -1,0 +1,92 @@
+{{>_navbar}}
+
+
+
+       <div class="col-lg-12">
+           <h1 class="page-header">Register Employees</h1>
+       </div>
+   </div>
+
+  <div class="row">
+
+   <div class="container register">
+     <div class="container profile col-md-4">
+       <div class="panel panel-default">
+         <div class="panel-body img">
+           <img src="/img/marketplace.png" class="responsive" alt="">
+           <hr>
+           <h3>Jeremy Muthama</h3>
+           <hr>
+           <h5><a> username</a></h5>
+         </div>
+       </div>
+     </div>
+
+
+
+                     <div  class="col-md-5 ">
+                     <div class="panel panel-default   ">
+                      <div class="panel-body">
+
+                        <div class="page-wrapper">
+                          {{#if error}}
+                            <div class="alert alert-danger">{{error}}</div>
+                          {{/if}}
+                          {{#each errors}}
+                            <div class="alert alert-danger">{{text}}</div>
+                          {{else}}
+                          {{/each}}
+                        </div>
+
+
+
+                          <form action="/admin/register" method="post" enctype="multipart/form-data">
+
+                            <h3><a>Personal Details</a></h3>
+
+                            <div class="form-group input-group">
+                              <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                              <input type="text" class="form-control" name="name" placeholder="Username" required>
+                            </div>
+
+                            <div class="form-group input-group">
+                              <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                              <input type="email" class="form-control" name="email" value="" placeholder="Enter Email" required>
+                            </div>
+
+                            <div class="form-group input-group">
+                              <span class="input-group-addon"> <i class="fa fa-phone"></i></span>
+                              <input type="number" name="contact" class="form-control" value="" placeholder="Enter Contact" required>
+                            </div>
+
+                            <div class="form-group input-group">
+                              <span class="input-group-addon"><i class="fa fa-list-alt"></i></span>
+                              <input type="text" name="address" class="form-control" value="" placeholder="Enter address" required>
+                            </div>
+
+                            <div class="form-group input-group">
+                              <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                              <input type="password" name="password"  class="form-control"value="" placeholder="Enter Password" required>
+                            </div>
+
+                            <div class="form-group input-group">
+                              <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                              <input type="password" name="password1"  class="form-control"value="" placeholder="Confirm Password" required>
+                            </div>
+
+                            <div class="form-group">
+                              <label for=""> Choose profile image</label>
+                              <input type="file" name="profile" class="btn btn-primary"  value="">
+                            </div>
+
+                            <button type="button" name="button">upload</button>
+
+
+                              <button type="submit" class="btn btn-primary ">Submit</button>
+                            </form>
+                  </div>
+                </div>
+              </div>
+
+             </div>
+            </div>
